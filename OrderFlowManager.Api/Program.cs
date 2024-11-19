@@ -1,6 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using OrderFlowManager.Business.Interfaces;
+using OrderFlowManager.Business.Servicios;
+using OrderFlowManager.Domain.Interfaces;
+using OrderFlowManager.Persistencia.Data;
+using OrderFlowManager.Persistencia.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
