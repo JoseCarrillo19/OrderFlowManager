@@ -1,9 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using OrderFlowManager.Business.Interfaces;
-using OrderFlowManager.Business.Servicios;
-using OrderFlowManager.Domain.Interfaces;
 using OrderFlowManager.Persistencia.Data;
-using OrderFlowManager.Persistencia.Repositories;
+using OrderFlowManager.Persistencia.IoC;
+using OrderFlowManager.Business.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddScoped<IOrderService, OrderService>();
+// Inyección de dependencias
+builder.Services.AddServices();
+builder.Services.AddPersistenceServices(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
