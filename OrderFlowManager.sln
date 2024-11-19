@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderFlowManager.Api", "OrderFlowManager.Api\OrderFlowManager.Api.csproj", "{9C709D4E-FDAF-4066-B5A0-879D54668453}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1FB26A34-1FFD-49BC-B1D2-CA4D44208F5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{2AE736C1-381D-45D9-9A51-60793855518E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{68CB3BCE-3E39-4008-B5DB-B010CD2D08E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C30CADCA-087A-4A1D-A4A5-63F87E03DF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderFlowManager.Domain", "OrderFlowManager.Domain\OrderFlowManager.Domain.csproj", "{00FF400D-3112-4AF6-A617-011556C6E97C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderFlowManager.Business", "OrderFlowManager.Business\OrderFlowManager.Business.csproj", "{A60F4D31-397C-426C-83D1-4E392E57B479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderFlowManager.Persistencia", "OrderFlowManager.Persistencia\OrderFlowManager.Persistencia.csproj", "{45EC3835-4F9E-44F2-A86E-96FD67D3AF68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C709D4E-FDAF-4066-B5A0-879D54668453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C709D4E-FDAF-4066-B5A0-879D54668453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C709D4E-FDAF-4066-B5A0-879D54668453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C709D4E-FDAF-4066-B5A0-879D54668453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00FF400D-3112-4AF6-A617-011556C6E97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00FF400D-3112-4AF6-A617-011556C6E97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00FF400D-3112-4AF6-A617-011556C6E97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00FF400D-3112-4AF6-A617-011556C6E97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60F4D31-397C-426C-83D1-4E392E57B479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60F4D31-397C-426C-83D1-4E392E57B479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60F4D31-397C-426C-83D1-4E392E57B479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60F4D31-397C-426C-83D1-4E392E57B479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45EC3835-4F9E-44F2-A86E-96FD67D3AF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EC3835-4F9E-44F2-A86E-96FD67D3AF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EC3835-4F9E-44F2-A86E-96FD67D3AF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EC3835-4F9E-44F2-A86E-96FD67D3AF68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C709D4E-FDAF-4066-B5A0-879D54668453} = {2AE736C1-381D-45D9-9A51-60793855518E}
+		{2AE736C1-381D-45D9-9A51-60793855518E} = {1FB26A34-1FFD-49BC-B1D2-CA4D44208F5A}
+		{68CB3BCE-3E39-4008-B5DB-B010CD2D08E2} = {1FB26A34-1FFD-49BC-B1D2-CA4D44208F5A}
+		{C30CADCA-087A-4A1D-A4A5-63F87E03DF88} = {1FB26A34-1FFD-49BC-B1D2-CA4D44208F5A}
+		{00FF400D-3112-4AF6-A617-011556C6E97C} = {68CB3BCE-3E39-4008-B5DB-B010CD2D08E2}
+		{A60F4D31-397C-426C-83D1-4E392E57B479} = {68CB3BCE-3E39-4008-B5DB-B010CD2D08E2}
+		{45EC3835-4F9E-44F2-A86E-96FD67D3AF68} = {C30CADCA-087A-4A1D-A4A5-63F87E03DF88}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30E805A0-C388-4559-AD80-CA630D73AAA2}
+	EndGlobalSection
+EndGlobal
